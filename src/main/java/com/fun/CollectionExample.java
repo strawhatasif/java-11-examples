@@ -10,7 +10,7 @@ public class CollectionExample {
     }
 
     private static void unmodifiableSetExample() {
-        //Java 9
+        //Java 8
         Set<String> attendeeList = new HashSet<>();
         attendeeList.add("Rebecca Smith");
         attendeeList.add("Catherine Doe");
@@ -21,7 +21,7 @@ public class CollectionExample {
         Set<String> finalAttendees = Collections.unmodifiableSet(attendeeList);
         //finalAttendees.add("John Parker"); //java.lang.UnsupportedOperationException
 
-        //Java 11 - all of the above can now be replaced by a factory method in the Set class.
+        //Java 9+ - all of the above can now be replaced by a factory method in the Set class.
         Set<String> namesOfSessionAttendees =
                 Set.of("Rebecca Smith", "Catherine Doe", "Peter Serphen", "Samuel Jones", "Laura Hyde");
         //namesOfSessionAttendees.add("Catherine Doe"); //java.lang.UnsupportedOperationException
@@ -29,7 +29,7 @@ public class CollectionExample {
     }
 
     private static void unmodifiableMapExample() {
-        //Java 9
+        //Java 8
         Map<Integer, String> listOfTeamMembers = new HashMap<>();
         listOfTeamMembers.put(112, "Samantha Linden");
         listOfTeamMembers.put(449, "Jake Ringer");
@@ -39,7 +39,7 @@ public class CollectionExample {
         Map<Integer, String> finalListOfDinnerAttendees = Collections.unmodifiableMap(listOfTeamMembers);
         //finalListOfDinnerAttendees.put(210, "Jessica Jones"); //java.lang.UnsupportedOperationException
 
-        //Java 11 - all of the above can now be replaced by a factory method in the Map class.
+        //Java 9+ - all of the above can now be replaced by a factory method in the Map class.
         Map<Integer, String> dinnerAttendees =
                 Map.of(112, "Samantha Linden", 449, "Jake Ringer",
                         108, "Alice Peterson", 331, "Robert Williams");

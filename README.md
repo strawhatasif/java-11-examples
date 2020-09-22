@@ -4,4 +4,4 @@
 
 *** 
 * If you'd like to run this via Gradle type `gradlew run` or `./gradlew run` 
-* Make sure to update the `mainClassName` attribute in the `build.gradle`
+* Make sure to update the `mainClassName` attribute in the `build.gradle` if you'd like to switch the Main class.
