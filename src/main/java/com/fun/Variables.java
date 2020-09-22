@@ -16,10 +16,10 @@ public class Variables {
         System.out.println(greeting);
         System.out.println(daysInWeek);
 
-        var message = "the power of Java 11 (well, this was introduced in Java 10)";
+        var message = "the power of Java 10! applies to Java 11, too";
         var daysInMonth = 30;
 
-        System.out.println("Java 11: " + message);
-        System.out.println("Java 11: " + daysInMonth);
+        System.out.println("Java 10+: " + message);
+        System.out.println("Java 10+: " + daysInMonth);
     }
 }
