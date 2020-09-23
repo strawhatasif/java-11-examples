@@ -1,9 +1,19 @@
 package com.fun;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class Variables {
 
+    /*
+    Some notes:
+        *Java 10 introduced a powerful feature where one no longer has to declare the type of variable.
+        *HOWEVER, Java is still a statically typed language. Therefore, there are some limitations.
+        *All variables must be initialized for type inference to work.
+        *Variables using type inference can only be declared locally.
+        *Global variables are not allowed to be declared with var EVEN IF they are initialized.
+     */
+
+    //if you uncomment the below, this will not compile.
+    
+    //var sampleGreeting = "Hello World";
     public static void main(String[] args) {
         printVariables();
     }
