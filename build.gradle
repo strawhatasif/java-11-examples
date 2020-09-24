@@ -18,3 +18,8 @@ dependencies {
 application {
     mainClassName = 'com.fun.CollectionExample' // update this to the class you'd like to run.
 }
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
