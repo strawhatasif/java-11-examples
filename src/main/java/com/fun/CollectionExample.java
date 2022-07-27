@@ -24,7 +24,7 @@ public class CollectionExample {
         //Java 9+ - all of the above can now be replaced by a factory method in the Set class.
         Set<String> namesOfSessionAttendees =
                 Set.of("Rebecca Smith", "Catherine Doe", "Peter Serphen", "Samuel Jones", "Laura Hyde");
-        //namesOfSessionAttendees.add("Catherine Doe"); //java.lang.UnsupportedOperationException
+        namesOfSessionAttendees.add("Catherine Doe"); //java.lang.UnsupportedOperationException
         namesOfSessionAttendees.forEach(attendee -> System.out.println(attendee));
     }
 

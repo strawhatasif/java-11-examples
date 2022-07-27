@@ -6,20 +6,21 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+application {
+    mainClassName = 'com.fun.OptionalIsEmpty' // update this to the class you'd like to run.
+}
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.apache.commons:commons-lang3:3.11'
-    testImplementation 'junit:junit:4.12'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    testImplementation 'junit:junit:4.13.2'
 }
 
-application {
-    mainClassName = 'com.fun.CollectionExample' // update this to the class you'd like to run.
-}
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-}

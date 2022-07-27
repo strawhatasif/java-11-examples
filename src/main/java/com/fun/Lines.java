@@ -9,7 +9,8 @@ public class Lines {
     }
 
     private static void demonstrateStringLinesFunctionality() {
-        String message = "Hello\nI\nam\nhappy\nto\nmeet\nyou";
+        //Java 10 - Local Variable Type Inference
+        var message = "Hello\nI\nam\nhappy\nto\nmeet\nyou";
 
         //Java 8
         Arrays.stream(message.split("\n")).forEach(line -> System.out.println(line));
